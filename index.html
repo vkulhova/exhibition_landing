@@ -9,13 +9,9 @@
     </head>
     <body>
         <header>
-            <div id="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="45" viewBox="0 0 32 45" fill="none">
-                    <path d="M12.9175 43V42.8099C9.40272 40.5946 8.42861 39.0537 9.99283 35.3159C10.987 33.1746 11.2594 31.8671 11.0862 29.2881C12.8859 30.6958 13.0938 31.6365 13.2182 33.3609C16.5568 30.2796 17.449 28.2675 16.3069 23.8848C18.8379 25.7955 19.9077 27.2085 18.5483 32.9265C18.605 34.7378 18.9852 35.3834 19.9423 36.2391C19.1565 33.3459 19.681 32.2861 21.4184 30.8629C21.1659 32.3735 21.3193 33.2615 22.047 34.9086C24.2237 38.0458 23.8735 39.62 21.4184 42.2126C29.9703 38.3937 32.9879 35.5408 29.7005 26.9801C26.4673 21.5287 26.1018 18.4425 27.8691 12.8881C23.6871 14.9238 22.2316 16.6949 21.9924 21.5225C16.314 14.8052 13.2126 11.0189 16.9629 2C12.3925 4.00964 10.9887 6.32463 9.74682 11.7477C8.53835 15.7851 11.4142 19.8662 11.4142 21.9298C11.4142 23.9934 10.3413 25.6024 9.11814 26.9801C10.0195 21.0344 8.97972 18.7981 5.1274 16.2278C7.61477 24.8351 1 26.0026 1 32.2205C1 38.4384 4.53864 41.3198 12.9175 43Z" stroke="black" stroke-width="2"/>
-                </svg>
-            </div>
-            <nav>
-                <ul class="head-nav">
+            <img id="logo" src="imgs/LOGO.svg" alt="logo">
+            <nav class="head-nav">
+                <ul class="nav-list">
                     <li class="nav-element">Artist</li>
                     <li class="nav-element">Gallery</li>
                     <li class="nav-element">Schedule</li>
@@ -25,22 +21,22 @@
             </nav>
         </header>
         <main>
-            <section id="first-page">
+            <section class="first-page">
                 <div class="first-page-info">
                     <h1 class="h1">EXHIBITION <span class="text-red">"PALAE"</span></h1>
-                    <p>An incredible exhibition that radically changes the idea of candle art</p>
+                    <p class="exhibition-description">An incredible exhibition that radically changes the idea of candle art</p>
                     <button class="button-buy-ticket">BUY TICKET</button>
                 </div>
-                <img src="imgs/Rectangle-2.png" id="start-photo" alt="start photo">
+                <img src="imgs/Rectangle-2.png" class="start-photo" alt="start photo">
             </section>
-            <section id="about-the-artists">
-                <img src="imgs/Rectangle-1.png" id="artists-photo" alt="artists photo">
+            <section class="about-the-artists">
+                <img src="imgs/Rectangle-1.png" class="artists-photo" alt="artists photo">
                 <div class="about-the-artists-info">
                     <h2 class="h2">ABOUT THE ARTISTS</h2>
-                    <p id="artists-info">A year and a half ago, Aliona Nikolaieva and Tatiana Leonidova had their first thoughts about creating candles. Over the next few months, they tested all possible shapes and waxes and came to the conclusion that it was time to think about the concept. As of now, the craftswomen have developed a concept for candles that will be released in collections, each with its own special meaning.</p>
+                    <p class="artists-info">A year and a half ago, Aliona Nikolaieva and Tatiana Leonidova had their first thoughts about creating candles. Over the next few months, they tested all possible shapes and waxes and came to the conclusion that it was time to think about the concept. As of now, the craftswomen have developed a concept for candles that will be released in collections, each with its own special meaning.</p>
                 </div>
             </section>
-            <section id="gallery">
+            <section class="gallery">
                 <h2 class="h2">COLLECTION <span class="text-red">"FIRST SIGHT"</span></h2>
                 <div class="img-grid">
                     <img class="gallery-imgs" src="imgs/Rectangle-4.png" alt="candle">
@@ -51,51 +47,59 @@
                     <img class="gallery-imgs" src="imgs/Rectangle-9.png" alt="candle">
                 </div>
             </section>
-            <section id="schedule">
+            <section class="schedule">
                 <h2 class="h2">SCHEDULE</h2>
-                <ul>
-                    <li>
-                        <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                        <h3 class="schedule-name">EXHIBITION OPENING</h3>
-                        <h3>21/09</h3>
+                <ul class="schedule-list">
+                    <li class="schedule-element">
+                        <div class="arrow-h3">
+                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                            <h3 class="schedule-name">EXHIBITION OPENING</h3>
+                        </div>  
+                        <h3 class="date">21/09</h3>
                     </li>
-                    <li>
-                        <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                        <h3 class="schedule-name">COMMUNICATION WITH ARTISTS</h3>
-                        <h3>22/09</h3>
+                    <li class="schedule-element">
+                        <div class="arrow-h3">
+                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                            <h3 class="schedule-name">COMMUNICATION WITH ARTISTS</h3>
+                        </div>
+                        <h3 class="date">22/09</h3>
                     </li>
-                    <li>
-                        <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                        <h3 class="schedule-name">AUCTION</h3>
-                        <h3>23/09</h3>
+                    <li class="schedule-element">
+                        <div class="arrow-h3">
+                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                            <h3 class="schedule-name">AUCTION</h3>
+                        </div>
+                        <h3 class="date">23/09</h3>
                     </li>
-                    <li>
-                        <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                        <h3 class="schedule-name">EXHIBITION CLOSING</h3>
-                        <h3>24/09</h3>
+                    <li  class="schedule-element">
+                        <div class="arrow-h3">
+                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                            <h3 class="schedule-name">EXHIBITION CLOSING</h3>
+                    </div>
+                        <h3 class="date">24/09</h3>
                     </li>
                 </ul>
             </section>
-            <section id="tickets">
+            <section class="tickets">
                 <h2 class="h2">TICKETS</h2>
-                <div class="standart-ticket">
-                    <div class="ticket-info">
+                <div class="ticket">
+                    <div class="standart ticket-info">
                         <h3 class="ticket-name">STANDART</h3>
                         <p class="ticket-description">The ticket gives you access to the all the main events and activities within the exhibition</p>
                         <p class="ticket-date">Date: 21/09 - 24/09</p>
                         <p class="ticket-price">PRICE: 500 UAH</p>
-                        <button class="button-buy-now">BUY NOW</button>
+                        <button class="button-buy-ticket">BUY NOW</button>
                     </div>
                     <img class="ticket-img" src="imgs/Rectangle-10.png" alt="candles">
                 </div>
-                <div class="premium-ticket">
+                <div class="ticket">
                     <img class="ticket-img" src="imgs/Rectangle-10.png" alt="candles">
-                    <div class="ticket-info">
+                    <div class="premium ticket-info">
                         <h3 class="ticket-name">PREMIUM</h3>
                         <p class="ticket-description">Standart ticket + personal communication with the artists and the autographs</p>
                         <p class="ticket-date">Date: 21/09 - 24/09</p>
                         <p class="ticket-price">PRICE: 2000 UAH</p>
-                        <button class="button-buy-now">BUY NOW</button>
+                        <button class="button-buy-ticket">BUY NOW</button>
                     </div>
                 </div>
             </section>
@@ -124,8 +128,8 @@
                 <li class="foot-element">Contacts</li>
             </ul>
             <div class="social-media-div">
-                <img class="social-media" src="imgs/facebook.png" alt="facebook logo">
-                <img class="social-media" src="imgs/instagram.png" alt="instagram logo">
+                <img class="social-media" src="imgs/icon/facebook.svg" alt="facebook logo">
+                <img class="social-media" src="imgs/icon/instagram.svg" alt="instagram logo">
             </div>
         </footer>
     </body>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #171717;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding: 90px 45px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.head-nav{
+    max-width: 600px;
+    width: 100%;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+.first-page{
+    gap: 40px;
+    display: flex;
+    align-items: stretch;
+}
+
+.first-page-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+
+.h1{
+    color: #FFF;
+    font-family: Audiowide;
+    font-size: 80px;
+}
+
+
+.text-red{
+    color: #BC0F00;
+}
+
+.exhibition-description{
+    font-size: 35px;
+}
+
+.button-buy-ticket{
+    width: 100%;
+    padding: 12px 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #BC0F00;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4.5px;
+}
+
+.start-photo{
+    width: 50%;
+}
+
+.about-the-artists{
+    margin-bottom: 0;
+    margin-top: 180px;
+    display: flex;
+    gap: 40px;
+}
+
+
+.h2{
+    font-family: Audiowide;
+    font-size: 60px;
+}
+
+.artists-info{
+    font-size: 22px;
+}
+
+.artists-photo{
+    max-width: 35%;
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+.gallery{
+    margin-top: 180px;
+}
+
+.h2{
+    margin-bottom: 60px;
+}
+
+.img-grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+
+.schedule{
+    margin-top: 180px;
+}
+
+.schedule-element{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px #fff solid;
+    align-items:center;
+}
+
+.schedule-list{
+    border-top: 2px #fff solid;
+}
+
+.arrows{
+    height: 60px;
+}
+
+.arrow-h3{
+    display: flex;
+    gap: 40px;
+    align-items:center;
+    padding: 25px 0;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.tickets{
+    margin-top: 180px;
+}
+
+.ticket{
+    display: flex;
+    border-radius: 20px;
+    border: 2px solid #7B7B7B;
+    padding: 45px;
+    margin-top: 60px;
+    gap: 30px;
+    max-width: 1100px;
+}
+
+.ticket-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+    font-size: 22px;
+}
+
+.ticket-name{
+    font-family: Audiowide;
+    font-size: 40px;
+}
+
+.ticket-price{
+    font-weight: 600;
+}
+
+.ticket .button-buy-ticket{
+    border-radius: 10px;
+}
+
+.premium{
+    align-items: end;
+    text-align: end;
+}

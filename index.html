@@ -10,6 +10,7 @@
     <body>
         <header>
             <img id="logo" src="imgs/LOGO.svg" alt="logo">
+            <img id="menu" src="imgs/menu.svg" alt="menu-icon">
             <nav class="head-nav">
                 <ul class="nav-list">
                     <li class="nav-element">Artist</li>
@@ -23,21 +24,23 @@
         <main>
             <section class="first-page">
                 <div class="first-page-info">
-                    <h1 class="h1">EXHIBITION <span class="text-red">"PALAE"</span></h1>
+                    <h1>EXHIBITION <span class="text-red">"PALAE"</span></h1>
                     <p class="exhibition-description">An incredible exhibition that radically changes the idea of candle art</p>
-                    <button class="button-buy-ticket">BUY TICKET</button>
+                    <button class="button-buy-ticket desktop">BUY TICKET</button>
                 </div>
                 <img src="imgs/Rectangle-2.png" class="start-photo" alt="start photo">
+                <button class="button-buy-ticket mobile">BUY TICKET</button>
             </section>
             <section class="about-the-artists">
-                <img src="imgs/Rectangle-1.png" class="artists-photo" alt="artists photo">
+                <img src="imgs/Rectangle-1.png" class="artists-photo desktop" alt="artists photo">
                 <div class="about-the-artists-info">
-                    <h2 class="h2">ABOUT THE ARTISTS</h2>
+                    <h2>ABOUT THE ARTISTS</h2>
+                    <img src="imgs/Rectangle-1.png" class="artists-photo mobile" alt="artists photo">
                     <p class="artists-info">A year and a half ago, Aliona Nikolaieva and Tatiana Leonidova had their first thoughts about creating candles. Over the next few months, they tested all possible shapes and waxes and came to the conclusion that it was time to think about the concept. As of now, the craftswomen have developed a concept for candles that will be released in collections, each with its own special meaning.</p>
                 </div>
             </section>
             <section class="gallery">
-                <h2 class="h2">COLLECTION <span class="text-red">"FIRST SIGHT"</span></h2>
+                <h2>COLLECTION <span class="text-red">"FIRST SIGHT"</span></h2>
                 <div class="img-grid">
                     <img class="gallery-imgs" src="imgs/Rectangle-4.png" alt="candle">
                     <img class="gallery-imgs" src="imgs/Rectangle-5.png" alt="candle">
@@ -48,14 +51,16 @@
                 </div>
             </section>
             <section class="schedule">
-                <h2 class="h2">SCHEDULE</h2>
+                <h2>SCHEDULE</h2>
                 <ul class="schedule-list">
                     <li class="schedule-element">
-                        <div class="arrow-h3">
-                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                            <h3 class="schedule-name">EXHIBITION OPENING</h3>
-                        </div>  
-                        <h3 class="date">21/09</h3>
+                        <div class="container">
+                            <div class="arrow-h3">
+                                <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                                <h3 class="schedule-name">EXHIBITION OPENING</h3>
+                            </div>  
+                            <h3 class="date">21/09</h3>
+                        </div>
                         <div class="popup-opened">
                             <ul class="popup-list">
                                 <li class="popup-element">Artists' Speach
@@ -68,11 +73,13 @@
                         </div>
                     </li>
                     <li class="schedule-element">
-                        <div class="arrow-h3">
-                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                            <h3 class="schedule-name">COMMUNICATION WITH ARTISTS</h3>
+                        <div class="container">
+                            <div class="arrow-h3">
+                                <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                                <h3 class="schedule-name">COMMUNICATION WITH ARTISTS</h3>
+                            </div>
+                            <h3 class="date">22/09</h3>
                         </div>
-                        <h3 class="date">22/09</h3>
                         <div class="popup-opened">
                             <ul class="popup-list">
                                 <li class="popup-element">Conference
@@ -85,11 +92,13 @@
                         </div>
                     </li>
                     <li class="schedule-element">
-                        <div class="arrow-h3">
-                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                            <h3 class="schedule-name">AUCTION</h3>
+                        <div class="container">
+                            <div class="arrow-h3">
+                                <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                                <h3 class="schedule-name">AUCTION</h3>
+                            </div>
+                            <h3 class="date">23/09</h3>
                         </div>
-                        <h3 class="date">23/09</h3>
                         <div class="popup-opened">
                             <ul class="popup-list">
                                 <li class="popup-element">Bargaining
@@ -102,11 +111,13 @@
                         </div>
                     </li>
                     <li  class="schedule-element">
-                        <div class="arrow-h3">
-                            <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
-                            <h3 class="schedule-name">EXHIBITION CLOSING</h3>
-                    </div>
-                        <h3 class="date">24/09</h3>
+                        <div class="container">
+                            <div class="arrow-h3">
+                                <img class="arrows" src="imgs/arrow_outward.svg" alt="arrow">
+                                <h3 class="schedule-name">EXHIBITION CLOSING</h3>
+                            </div>
+                            <h3 class="date">24/09</h3>
+                        </div>
                         <div class="popup-opened">
                             <ul class="popup-list">
                                 <li class="popup-element">Banquet
@@ -124,14 +135,14 @@
                 </ul>
             </section>
             <section class="tickets">
-                <h2 class="h2">TICKETS</h2>
+                <h2>TICKETS</h2>
                 <div class="ticket">
                     <div class="standart ticket-info">
                         <h3 class="ticket-name">STANDART</h3>
                         <p class="ticket-description">The ticket gives you access to the all the main events and activities within the exhibition</p>
                         <p class="ticket-date">Date: 21/09 - 24/09</p>
                         <p class="ticket-price">PRICE: 500 UAH</p>
-                        <button class="button-buy-ticket">BUY NOW</button>
+                        <button class="button-buy-ticket ticket-sect">BUY NOW</button>
                     </div>
                     <img class="ticket-img" src="imgs/Rectangle-10.png" alt="candles">
                 </div>
@@ -142,12 +153,12 @@
                         <p class="ticket-description">Standart ticket + personal communication with the artists and the autographs</p>
                         <p class="ticket-date">Date: 21/09 - 24/09</p>
                         <p class="ticket-price">PRICE: 2000 UAH</p>
-                        <button class="button-buy-ticket">BUY NOW</button>
+                        <button class="button-buy-ticket ticket-sect">BUY NOW</button>
                     </div>
                 </div>
             </section>
             <section class="contact-us">
-                <h2 class="h2">CONTACT US</h2>
+                <h2>CONTACT US</h2>
                 <div class="contact-us-info-photo">     
                     <div class="contact-us-info">
                         <div class="phone-num">

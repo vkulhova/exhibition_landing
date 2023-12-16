@@ -11,10 +11,14 @@ body{
     color: #fff;
     font-family: 'Montserrat';
     font-weight: 400;
-    padding: 90px 45px;
+    padding: 60px 45px;
 }
 
 /* HEADER */
+
+#menu{
+    display: none;
+}
 
 header{
     display: flex;
@@ -37,6 +41,10 @@ ul{
     list-style: none;
 }
 
+.nav-element{
+    font-size: 20px;
+}
+
 /* FIRST PAGE */
 
 .first-page{
@@ -52,7 +60,7 @@ ul{
     max-height: 100%;
 }
 
-.h1{
+h1{
     color: #FFF;
     font-family: Audiowide;
     font-size: 80px;
@@ -79,6 +87,10 @@ ul{
     letter-spacing: 4.5px;
 }
 
+.mobile{
+    display: none;
+}
+
 .start-photo{
     width: 50%;
 }
@@ -92,7 +104,7 @@ ul{
     gap: 40px;
 }
 
-.h2{
+h2{
     font-family: Audiowide;
     font-size: 60px;
 }
@@ -125,10 +137,26 @@ ul{
     place-items: center;
 }
 
+.gallery-imgs{
+    width: 100%;
+    max-width: 350px;
+}
+
 /* SCHEDULE */
 
 .schedule{
     margin-top: 180px;
+}
+
+.date{
+    justify-self: flex-end;
+    text-align: end;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .schedule-element{
@@ -147,6 +175,7 @@ ul{
 }
 
 .arrow-h3{
+    width: 100%;
     display: flex;
     gap: 40px;
     align-items:center;
@@ -243,9 +272,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 100px;
-    padding-top: 50px;;
+    padding: 100px 50px 0 50px;
 }
 
 .foot-nav{
@@ -253,3 +280,446 @@ footer{
     width: 100%;
 }
 
+.social-media-div{
+    display: flex;
+    flex-direction: row;
+}
+
+/* @media for laptop 1024px */
+@media (max-width: 1024px){
+    .about-the-artists, .gallery, .schedule, .tickets, .contact-us{
+        margin-top: 100px;
+    }
+
+    h1{
+        font-size: 65px;
+    }
+
+    h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .exhibition-description {
+        font-size: 25px;
+    }
+
+    .nav-element{
+        font-size: 18px;
+    }
+
+    .artists-info{
+        font-size: 18px;
+    }
+
+    /* HEADER */
+
+    header{
+        margin-bottom: 50px;
+    }
+
+    #logo{
+        width: 27px;
+        height: 35px;
+    }
+
+    /* FIRST PAGE */
+
+    .start-photo {
+        width: 40%;
+    }
+
+    /* ABOUT THE ARTISTS */
+
+    .artists-photo {
+        max-width: 28%;
+    }
+
+    /* GALLERY */
+    
+    /* SCHEDULE */
+
+    .arrow-h3 {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    /* TICKETS */
+
+    .ticket{
+        padding: 30px;
+    }
+
+    .ticket-name {
+        font-size: 30px;
+    }
+
+    .ticket-info {
+        font-size: 16px;
+    }
+
+    .ticket-img{
+        width: 60%; 
+    }
+
+    .button-buy-ticket{
+        font-size: 22px;
+    }
+
+    /* CONTACT US */
+
+    .contact-us-info{
+        justify-content: space-around;
+    }
+
+    .contact-us-info-det {
+        font-size: 20px;
+    }
+
+    .map {
+        width: 450px;
+        height: 300px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 60px 30px 0 30px;
+    }
+}
+
+/* @madia for tablet 768px */
+
+@media (max-width: 768px){
+    .about-the-artists, .gallery, .schedule, .tickets, .contact-us{
+        margin-top: 80px;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+
+    h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .exhibition-description {
+        font-size: 20px;
+    }
+
+    .nav-element{
+        font-size: 18px;
+    }
+
+    .artists-info{
+        font-size: 16px;
+    }
+
+    /* HEADER */
+
+    header{
+        margin-bottom: 50px;
+    }
+
+    #logo{
+        width: 27px;
+        height: 35px;
+    }
+
+    /* FIRST PAGE */
+
+    .start-photo {
+        width: 40%;
+    }
+
+    /* ABOUT THE ARTISTS */
+
+    .artists-photo {
+        max-width: 28%;
+    }
+
+    /* GALLERY */
+    
+    /* SCHEDULE */
+
+    .arrow-h3 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    /* TICKETS */
+
+    .ticket{
+        padding: 30px;
+    }
+
+    .ticket-name {
+        font-size: 25px;
+    }
+
+    .ticket-info {
+        font-size: 14px;
+    }
+
+    .ticket-img{
+        width: 50%; 
+    }
+
+    .button-buy-ticket{
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    /* CONTACT US */
+
+    .contact-us-info{
+        justify-content: space-around;
+    }
+
+    .contact-us-info-det {
+        font-size: 18px;
+    }
+
+    .map {
+        width: 400px;
+        height: 270px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 40px 20px 0 20px;
+    }
+
+    footer .foot-nav .nav-list{
+        margin: 30px;
+        width: auto;
+    }
+}
+
+/* @media for phone 400px */
+
+@media (max-width: 425px){
+    body{
+        padding: 30px 15px;
+    }
+
+    .about-the-artists, .gallery, .schedule, .tickets, .contact-us{
+        margin-top: 60px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .exhibition-description {
+        font-size: 18px;
+        margin: 10px 0 10px;
+    }
+
+    .nav-element{
+        font-size: 20px;
+    }
+
+    .artists-info{
+        font-size: 16px;
+    }
+
+    /* HEADER */
+
+    header{
+        margin-bottom: 30px;
+    }
+
+    #logo{
+        width: 31px;
+        height: 45px;
+    }
+
+    .head-nav{
+        display: none;
+    }
+
+    #menu{
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    /* FIRST PAGE */
+
+    .first-page{
+        display: block;
+    }
+
+    .start-photo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .button-buy-ticket{
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 4.5px;
+    }
+
+    /* ABOUT THE ARTISTS */
+
+    .artists-photo {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* GALLERY */
+
+    .img-grid{
+        gap: 15px;
+    }
+
+    .gallery-imgs{
+        max-width: 100%;
+    }
+    
+    /* SCHEDULE */
+
+    .arrows{
+        height: auto;
+        width: 30px;
+    }
+
+    .arrow-h3 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 7px;
+    }
+
+    /* TICKETS */
+
+    .ticket{
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 15px;
+        gap: 0;
+    }
+
+    .ticket-name {
+        font-size: 18px;
+    }
+
+    .ticket-info {
+        gap:5px;
+        font-size: 16px;
+    }
+
+    .ticket-img{
+        display: none;
+    }
+
+    .ticket-sect{
+        padding: 5px;
+        letter-spacing: 3px;
+        width:100%;
+    }
+
+    .premium{
+        align-items:baseline;
+        text-align:left
+    }
+
+    /* CONTACT US */
+
+    .contact-us-info-photo{
+        display: block;
+    }
+
+    .contact-us-info{
+        justify-content: space-around;
+    }
+
+    .contact-us-info-det {
+        font-size: 16px;
+    }
+
+    .map {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 10px 10px 0px 10px;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .foot-nav .nav-list{
+        margin: 0;
+        align-items: center;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* HOVER */
+
+.button-buy-ticket:hover{
+    background-color: #940C00;
+}
+
+/* ACTIVE */
+
+.button-buy-ticket:active{
+    border-radius: 20px;
+    border: 2px solid #BC0F00;
+    background: #171717;
+    color: #BC0F00;
+}

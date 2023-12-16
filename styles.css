@@ -212,6 +212,7 @@ h3{
 
 .contact-us-info-photo{
     display: flex;
+    justify-content: space-between;
     align-items: stretch;
 }
 
@@ -251,3 +252,4 @@ footer{
     max-width: 600px;
     width: 100%;
 }
+

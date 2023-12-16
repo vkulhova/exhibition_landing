@@ -14,6 +14,8 @@ body{
     padding: 90px 45px;
 }
 
+/* HEADER */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,8 @@ ul{
     list-style: none;
 }
 
+/* FIRST PAGE */
+
 .first-page{
     gap: 40px;
     display: flex;
@@ -48,13 +52,11 @@ ul{
     max-height: 100%;
 }
 
-
 .h1{
     color: #FFF;
     font-family: Audiowide;
     font-size: 80px;
 }
-
 
 .text-red{
     color: #BC0F00;
@@ -81,13 +83,14 @@ ul{
     width: 50%;
 }
 
+/* ABOUT THE ARTISTS */
+
 .about-the-artists{
     margin-bottom: 0;
     margin-top: 180px;
     display: flex;
     gap: 40px;
 }
-
 
 .h2{
     font-family: Audiowide;
@@ -105,6 +108,8 @@ ul{
     height: auto;
 }
 
+/* GALLERY */
+
 .gallery{
     margin-top: 180px;
 }
@@ -119,6 +124,8 @@ ul{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
 }
+
+/* SCHEDULE */
 
 .schedule{
     margin-top: 180px;
@@ -150,6 +157,12 @@ h3{
     font-weight: 400;
     font-size: 40px;
 }
+
+.popup-opened{
+    display: none;
+}
+
+/* TICKETS */
 
 .tickets{
     margin-top: 180px;
@@ -189,4 +202,52 @@ h3{
 .premium{
     align-items: end;
     text-align: end;
+}
+
+/* CONTACT US */
+
+.contact-us{
+    margin-top: 180px;
+}
+
+.contact-us-info-photo{
+    display: flex;
+    align-items: stretch;
+}
+
+.contact-us-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+.map{
+    width: 582px;
+    height: 376px;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 600;
+}
+.contact-us-info-det{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 50px;;
+}
+
+.foot-nav{
+    max-width: 600px;
+    width: 100%;
 }

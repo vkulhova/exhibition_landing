@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;600&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #171717;
     color: #fff;
     font-family: 'Montserrat';
@@ -16,65 +16,65 @@ body{
 
 /* HEADER */
 
-#menu{
+#menu {
     display: none;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 90px;
 }
 
-.head-nav{
+.head-nav {
     max-width: 600px;
     width: 100%;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     justify-content: space-between;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.nav-element{
+.nav-element {
     font-size: 20px;
 }
 
 /* FIRST PAGE */
 
-.first-page{
+.first-page {
     gap: 40px;
     display: flex;
     align-items: stretch;
 }
 
-.first-page-info{
+.first-page-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 100%;
 }
 
-h1{
+h1 {
     color: #FFF;
     font-family: Audiowide;
     font-size: 80px;
 }
 
-.text-red{
+.text-red {
     color: #BC0F00;
 }
 
-.exhibition-description{
+.exhibition-description {
     font-size: 35px;
 }
 
-.button-buy-ticket{
+.button-buy-ticket {
     width: 100%;
     padding: 12px 40px;
     border: none;
@@ -87,33 +87,33 @@ h1{
     letter-spacing: 4.5px;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
-.start-photo{
+.start-photo {
     width: 50%;
 }
 
 /* ABOUT THE ARTISTS */
 
-.about-the-artists{
+.about-the-artists {
     margin-bottom: 0;
     margin-top: 180px;
     display: flex;
     gap: 40px;
 }
 
-h2{
+h2 {
     font-family: Audiowide;
     font-size: 60px;
 }
 
-.artists-info{
+.artists-info {
     font-size: 22px;
 }
 
-.artists-photo{
+.artists-photo {
     max-width: 35%;
     width: 100%;
     object-fit: contain;
@@ -122,82 +122,113 @@ h2{
 
 /* GALLERY */
 
-.gallery{
+.gallery {
     margin-top: 180px;
 }
 
-.h2{
+.h2 {
     margin-bottom: 60px;
 }
 
-.img-grid{
+.img-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
 }
 
-.gallery-imgs{
+.gallery-imgs {
     width: 100%;
     max-width: 350px;
 }
 
 /* SCHEDULE */
 
-.schedule{
+.schedule {
     margin-top: 180px;
 }
 
-.date{
+.date {
     justify-self: flex-end;
     text-align: end;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-.schedule-element{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px #fff solid;
-    align-items:center;
-}
-
-.schedule-list{
     border-top: 2px #fff solid;
-}
-
-.arrows{
-    height: 60px;
-}
-
-.arrow-h3{
-    width: 100%;
-    display: flex;
-    gap: 40px;
-    align-items:center;
     padding: 25px 0;
 }
 
-h3{
+.schedule-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.arrows {
+    height: 60px;
+    transition: all 0.4s ease-in-out;
+}
+
+.arrow-h3 {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+h3 {
     font-weight: 400;
     font-size: 40px;
 }
 
-.popup-opened{
-    display: none;
+.popup-opened {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.popup-element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px #fff solid;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.popup-list .popup-element:last-child {
+    border-bottom: none;
+}
+
+
+.schedule-element-open {
+    transition: all 0.5s ease-in-out;
+}
+
+.schedule-element-open .popup-opened {
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+.schedule-element-open .arrows {
+    transform: rotate(90deg);
 }
 
 /* TICKETS */
 
-.tickets{
+.tickets {
     margin-top: 180px;
 }
 
-.ticket{
+.ticket {
     display: flex;
     border-radius: 20px;
     border: 2px solid #7B7B7B;
@@ -207,7 +238,7 @@ h3{
     max-width: 1100px;
 }
 
-.ticket-info{
+.ticket-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -215,92 +246,98 @@ h3{
     font-size: 22px;
 }
 
-.ticket-name{
+.ticket-name {
     font-family: Audiowide;
     font-size: 40px;
 }
 
-.ticket-price{
+.ticket-price {
     font-weight: 600;
 }
 
-.ticket .button-buy-ticket{
+.ticket .button-buy-ticket {
     border-radius: 10px;
 }
 
-.premium{
+.premium {
     align-items: end;
     text-align: end;
 }
 
 /* CONTACT US */
 
-.contact-us{
+.contact-us {
     margin-top: 180px;
 }
 
-.contact-us-info-photo{
+.contact-us-info-photo {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
-.contact-us-info{
+.contact-us-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 100%;
 }
 
-.map{
+.map {
     width: 582px;
     height: 376px;
 }
 
-h4{
+h4 {
     font-size: 30px;
     font-weight: 600;
 }
-.contact-us-info-det{
+
+.contact-us-info-det {
     font-size: 30px;
     font-weight: 400;
 }
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px 0 50px;
 }
 
-.foot-nav{
+.foot-nav {
     max-width: 600px;
     width: 100%;
 }
 
-.social-media-div{
+.social-media-div {
     display: flex;
     flex-direction: row;
 }
 
 /* @media for laptop 1024px */
-@media (max-width: 1024px){
-    .about-the-artists, .gallery, .schedule, .tickets, .contact-us{
+@media (max-width: 1024px) {
+
+    .about-the-artists,
+    .gallery,
+    .schedule,
+    .tickets,
+    .contact-us {
         margin-top: 100px;
     }
 
-    h1{
+    h1 {
         font-size: 65px;
     }
 
-    h2{
+    h2 {
         font-size: 45px;
         margin-bottom: 30px;
     }
 
-    h3{
+    h3, .popup-element {
         font-size: 30px;
     }
 
@@ -312,21 +349,21 @@ footer{
         font-size: 25px;
     }
 
-    .nav-element{
+    .nav-element {
         font-size: 18px;
     }
 
-    .artists-info{
+    .artists-info {
         font-size: 18px;
     }
 
     /* HEADER */
 
-    header{
+    header {
         margin-bottom: 50px;
     }
 
-    #logo{
+    #logo {
         width: 27px;
         height: 35px;
     }
@@ -344,19 +381,20 @@ footer{
     }
 
     /* GALLERY */
-    
+
     /* SCHEDULE */
 
     .arrow-h3 {
-        display: flex;
         gap: 20px;
-        align-items: center;
-        padding: 5px 0;
+    }
+
+    .container {
+        padding: 15px 0;
     }
 
     /* TICKETS */
 
-    .ticket{
+    .ticket {
         padding: 30px;
     }
 
@@ -368,17 +406,17 @@ footer{
         font-size: 16px;
     }
 
-    .ticket-img{
-        width: 60%; 
+    .ticket-img {
+        width: 60%;
     }
 
-    .button-buy-ticket{
+    .button-buy-ticket {
         font-size: 22px;
     }
 
     /* CONTACT US */
 
-    .contact-us-info{
+    .contact-us-info {
         justify-content: space-around;
     }
 
@@ -393,28 +431,33 @@ footer{
 
     /* FOOTER */
 
-    footer{
+    footer {
         padding: 60px 30px 0 30px;
     }
 }
 
 /* @madia for tablet 768px */
 
-@media (max-width: 768px){
-    .about-the-artists, .gallery, .schedule, .tickets, .contact-us{
+@media (max-width: 768px) {
+
+    .about-the-artists,
+    .gallery,
+    .schedule,
+    .tickets,
+    .contact-us {
         margin-top: 80px;
     }
 
-    h1{
+    h1 {
         font-size: 55px;
     }
 
-    h2{
+    h2 {
         font-size: 35px;
         margin-bottom: 15px;
     }
 
-    h3{
+    h3, .popup-element {
         font-size: 25px;
     }
 
@@ -426,21 +469,21 @@ footer{
         font-size: 20px;
     }
 
-    .nav-element{
+    .nav-element {
         font-size: 18px;
     }
 
-    .artists-info{
+    .artists-info {
         font-size: 16px;
     }
 
     /* HEADER */
 
-    header{
+    header {
         margin-bottom: 50px;
     }
 
-    #logo{
+    #logo {
         width: 27px;
         height: 35px;
     }
@@ -458,19 +501,24 @@ footer{
     }
 
     /* GALLERY */
-    
+
     /* SCHEDULE */
 
     .arrow-h3 {
-        display: flex;
         gap: 10px;
-        align-items: center;
-        padding: 5px 0;
+    }
+
+    .container, .popup-element {
+        padding: 10px;
+    }
+
+    .popup-opened {
+        padding-left: 80px;
     }
 
     /* TICKETS */
 
-    .ticket{
+    .ticket {
         padding: 30px;
     }
 
@@ -482,18 +530,18 @@ footer{
         font-size: 14px;
     }
 
-    .ticket-img{
-        width: 50%; 
+    .ticket-img {
+        width: 50%;
     }
 
-    .button-buy-ticket{
+    .button-buy-ticket {
         padding: 8px;
         font-size: 18px;
     }
 
     /* CONTACT US */
 
-    .contact-us-info{
+    .contact-us-info {
         justify-content: space-around;
     }
 
@@ -508,11 +556,11 @@ footer{
 
     /* FOOTER */
 
-    footer{
+    footer {
         padding: 40px 20px 0 20px;
     }
 
-    footer .foot-nav .nav-list{
+    footer .foot-nav .nav-list {
         margin: 30px;
         width: auto;
     }
@@ -520,25 +568,29 @@ footer{
 
 /* @media for phone 400px */
 
-@media (max-width: 425px){
-    body{
+@media (max-width: 425px) {
+    body {
         padding: 30px 15px;
     }
 
-    .about-the-artists, .gallery, .schedule, .tickets, .contact-us{
+    .about-the-artists,
+    .gallery,
+    .schedule,
+    .tickets,
+    .contact-us {
         margin-top: 60px;
     }
 
-    h1{
+    h1 {
         font-size: 30px;
     }
 
-    h2{
+    h2 {
         font-size: 25px;
         margin-bottom: 20px;
     }
 
-    h3{
+    h3, .popup-element {
         font-size: 18px;
     }
 
@@ -551,30 +603,30 @@ footer{
         margin: 10px 0 10px;
     }
 
-    .nav-element{
+    .nav-element {
         font-size: 20px;
     }
 
-    .artists-info{
+    .artists-info {
         font-size: 16px;
     }
 
     /* HEADER */
 
-    header{
+    header {
         margin-bottom: 30px;
     }
 
-    #logo{
+    #logo {
         width: 31px;
         height: 45px;
     }
 
-    .head-nav{
+    .head-nav {
         display: none;
     }
 
-    #menu{
+    #menu {
         width: 30px;
         height: 30px;
         display: block;
@@ -582,7 +634,7 @@ footer{
 
     /* FIRST PAGE */
 
-    .first-page{
+    .first-page {
         display: block;
     }
 
@@ -591,15 +643,15 @@ footer{
         margin-bottom: 10px;
     }
 
-    .desktop{
+    .desktop {
         display: none;
     }
 
-    .mobile{
+    .mobile {
         display: block;
     }
 
-    .button-buy-ticket{
+    .button-buy-ticket {
         border-radius: 10px;
         font-size: 18px;
         font-weight: 600;
@@ -615,31 +667,27 @@ footer{
 
     /* GALLERY */
 
-    .img-grid{
+    .img-grid {
         gap: 15px;
     }
 
-    .gallery-imgs{
+    .gallery-imgs {
         max-width: 100%;
     }
-    
+
     /* SCHEDULE */
 
-    .arrows{
+    .arrows {
         height: auto;
         width: 30px;
     }
-
-    .arrow-h3 {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        padding: 7px;
+    .popup-opened {
+        padding-left: 40px;
     }
 
     /* TICKETS */
 
-    .ticket{
+    .ticket {
         margin-top: 0;
         margin-bottom: 10px;
         padding: 15px;
@@ -651,32 +699,32 @@ footer{
     }
 
     .ticket-info {
-        gap:5px;
+        gap: 5px;
         font-size: 16px;
     }
 
-    .ticket-img{
+    .ticket-img {
         display: none;
     }
 
-    .ticket-sect{
+    .ticket-sect {
         padding: 5px;
         letter-spacing: 3px;
-        width:100%;
+        width: 100%;
     }
 
-    .premium{
-        align-items:baseline;
-        text-align:left
+    .premium {
+        align-items: baseline;
+        text-align: left
     }
 
     /* CONTACT US */
 
-    .contact-us-info-photo{
+    .contact-us-info-photo {
         display: block;
     }
 
-    .contact-us-info{
+    .contact-us-info {
         justify-content: space-around;
     }
 
@@ -692,14 +740,14 @@ footer{
 
     /* FOOTER */
 
-    footer{
+    footer {
         padding: 10px 10px 0px 10px;
         justify-content: space-between;
         flex-direction: column;
         gap: 10px;
     }
 
-    footer .foot-nav .nav-list{
+    footer .foot-nav .nav-list {
         margin: 0;
         align-items: center;
         width: auto;
@@ -711,13 +759,13 @@ footer{
 
 /* HOVER */
 
-.button-buy-ticket:hover{
+.button-buy-ticket:hover {
     background-color: #940C00;
 }
 
 /* ACTIVE */
 
-.button-buy-ticket:active{
+.button-buy-ticket:active {
     border-radius: 20px;
     border: 2px solid #BC0F00;
     background: #171717;
